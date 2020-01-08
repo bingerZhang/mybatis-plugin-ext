@@ -13,6 +13,7 @@
     <groupId>cn.newxnet.plugins</groupId>
     <artifactId>mybatis-plugin-ext</artifactId>
     <version>1.1.1</version>
+    <description>mybatis-generator-plugin-ext</description>
 
     <licenses>
         <license>
@@ -47,11 +48,15 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>6</source>
-                    <target>6</target>
-                </configuration>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
