@@ -4,9 +4,36 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>7</version>
+    </parent>
+
     <groupId>cn.newxnet.plugins</groupId>
     <artifactId>mybatis-plugin-ext</artifactId>
     <version>1.1-SNAPSHOT</version>
+
+    <licenses>
+        <license>
+            <name>GNU Lesser General Public License Version 3</name>
+            <url>http://www.gnu.org/licenses/lgpl.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <scm>
+        <tag>master</tag>
+        <url>https://github.com/bingerZhang/mybatis-plugin-ext.git</url>
+        <connection>scm:git:https://github.com/bingerZhang/mybatis-plugin-ext.git</connection>
+        <developerConnection>scm:git:https://github.com/bingerZhang/mybatis-plugin-ext.git</developerConnection>
+    </scm>
+    <developers>
+        <developer>
+            <name>Zhang LiuBin</name>
+            <email>newxnet@163.com</email>
+            <organization>newxnet.cn</organization>
+        </developer>
+    </developers>
 
     <dependencies>
         <dependency>
